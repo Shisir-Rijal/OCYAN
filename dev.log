@@ -1020,3 +1020,25 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (f
  GET / 200 in 1021ms (next.js: 37ms, application-code: 984ms)
 [browser] Image with src "/assets/macbook.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
 [browser] Image with src "/assets/screenshot-email.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET / 200 in 1507ms (next.js: 920ms, application-code: 587ms)
+ GET / 200 in 375ms (next.js: 235ms, application-code: 140ms)
+✓ Compiled in 223ms
+ GET / 200 in 596ms (next.js: 254ms, application-code: 342ms)
+✓ Compiled in 89ms
+ GET / 200 in 346ms (next.js: 234ms, application-code: 112ms)
+ GET / 200 in 538ms (next.js: 301ms, application-code: 238ms)
+ GET / 200 in 84ms (next.js: 12ms, application-code: 72ms)
+ GET / 200 in 667ms (next.js: 12ms, application-code: 655ms)
+[browser] Image with src "/assets/macbook.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/assets/screenshot-email.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+✓ Compiled in 1656ms
+ GET / 200 in 3.5s (next.js: 1899ms, application-code: 1627ms)
+ GET / 200 in 764ms (next.js: 299ms, application-code: 465ms)
+ GET / 200 in 295ms (next.js: 20ms, application-code: 275ms)
+ GET / 200 in 293ms (next.js: 175ms, application-code: 118ms)
+✓ Compiled in 509ms
+ GET / 200 in 1229ms (next.js: 387ms, application-code: 842ms)
+ GET / 200 in 698ms (next.js: 15ms, application-code: 682ms)
+ GET / 200 in 2.7s (next.js: 250ms, application-code: 2.4s)
+[browser] Image with src "/assets/macbook.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/assets/screenshot-email.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)

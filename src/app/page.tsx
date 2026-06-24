@@ -76,7 +76,7 @@ function Navbar() {
 
 function HeroSection() {
   return (
-    <section className="hero-halo relative overflow-hidden pb-16 pt-28 sm:pb-20 sm:pt-40">
+    <section className="hero-halo relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-16 pt-28 sm:pt-40">
       <div className="mx-auto flex max-w-[1280px] flex-col items-center gap-5 px-6 text-center sm:gap-6 lg:px-20">
         <h1 className="font-display text-[32px] font-bold leading-[1.15] tracking-[-0.02em] text-black sm:text-[40px] lg:text-[52px]">
           Automate your <span className="text-accent">Outreach</span>
@@ -267,14 +267,14 @@ const FOUNDERS = [
     initials: "SR",
     name: "Shisir Rijal",
     role: "Co-Founder",
-    email: "sr@ocyan.com",
+    email: "sr@ocyan.ai",
     linkedin: "https://www.linkedin.com/in/shisir-rijal-724051226/",
   },
   {
     initials: "MN",
     name: "Marko Novak",
     role: "Co-Founder",
-    email: "mn@ocyan.com",
+    email: "mn@ocyan.ai",
     linkedin: "https://www.linkedin.com/in/marko-n-6766133b4/",
   },
 ];
