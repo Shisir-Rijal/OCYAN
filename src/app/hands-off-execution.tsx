@@ -146,11 +146,11 @@ export function HandsOffExecution() {
   }, [inView, loopKey]);
 
   return (
-    <section className="mx-auto max-w-[1280px] px-20 py-24">
+    <section className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 sm:py-20 lg:px-20 lg:py-24">
       <div>
         {/* Heading */}
-        <div className="mb-12 flex flex-col items-center gap-3 text-center">
-          <h2 className="font-display text-[32px] font-semibold tracking-tight text-ink">
+        <div className="mb-8 flex flex-col items-center gap-3 px-2 text-center sm:mb-12">
+          <h2 className="font-display text-[26px] font-semibold tracking-tight text-ink sm:text-[32px]">
             Hands-off{" "}
             <span className="text-accent">Execution</span>
           </h2>
@@ -170,8 +170,8 @@ export function HandsOffExecution() {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* ── Log column ── */}
             <div
-              className="p-8"
-              style={{ borderRight: "0.5px solid #2a2a3a" }}
+              className="p-5 sm:p-7 lg:p-8 lg:border-r"
+              style={{ borderColor: "#2a2a3a" }}
             >
               {/* Terminal chrome */}
               <div className="mb-5 flex items-center gap-2">
@@ -225,7 +225,10 @@ export function HandsOffExecution() {
             </div>
 
             {/* ── Steps column ── */}
-            <div className="flex flex-col gap-3 p-8">
+            <div
+              className="flex flex-col gap-3 border-t p-5 sm:p-7 lg:border-l-0 lg:border-t-0 lg:p-8"
+              style={{ borderColor: "#2a2a3a" }}
+            >
               {STEPS.map((step) => {
                 const status = stepStatus[step.id];
                 const progress = stepProgress[step.id];

@@ -835,3 +835,117 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (f
 [browser] Image with src "/assets/screenshot-email.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
 [browser] Image with src "/assets/macbook.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET / 200 in 1417ms (next.js: 393ms, application-code: 1024ms)
+[browser] Image with src "/assets/macbook.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/assets/screenshot-email.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+✓ Compiled in 1040ms
+ GET / 200 in 1502ms (next.js: 1359ms, application-code: 143ms)
+ GET / 200 in 60ms (next.js: 10ms, application-code: 49ms)
+ GET / 200 in 276ms (next.js: 147ms, application-code: 129ms)
+ GET / 200 in 64ms (next.js: 9ms, application-code: 55ms)
+ GET / 200 in 249ms (next.js: 152ms, application-code: 97ms)
+ GET / 200 in 41ms (next.js: 6ms, application-code: 35ms)
+ GET / 200 in 252ms (next.js: 119ms, application-code: 133ms)
+ GET / 200 in 88ms (next.js: 9ms, application-code: 79ms)
+ GET / 200 in 266ms (next.js: 142ms, application-code: 124ms)
+ GET / 200 in 69ms (next.js: 12ms, application-code: 57ms)
+ GET / 200 in 236ms (next.js: 119ms, application-code: 117ms)
+ GET / 200 in 49ms (next.js: 7ms, application-code: 42ms)
+ GET / 200 in 221ms (next.js: 117ms, application-code: 104ms)
+ GET / 200 in 57ms (next.js: 9ms, application-code: 48ms)
+ GET / 200 in 320ms (next.js: 127ms, application-code: 193ms)
+ GET / 200 in 119ms (next.js: 9ms, application-code: 109ms)
+✓ Compiled in 100ms
+ GET / 200 in 262ms (next.js: 135ms, application-code: 127ms)
+ GET / 200 in 77ms (next.js: 8ms, application-code: 69ms)
+ GET / 200 in 251ms (next.js: 136ms, application-code: 115ms)
+ GET / 200 in 38ms (next.js: 6ms, application-code: 32ms)
+⨯ ./src/app/orbital-graphic.tsx:154:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m152 |[0m     </div>
+  [90m153 |[0m   );
+[31m[1m>[0m [90m154 |[0m }
+  [90m    |[0m [31m[1m^[0m
+  [90m155 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/orbital-graphic.tsx
+    ./src/app/page.tsx
+
+
+✓ Compiled in 2.4s
+ GET / 500 in 2.3s (next.js: 1905ms, application-code: 370ms)
+⨯ ./src/app/orbital-graphic.tsx:154:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m152 |[0m     </div>
+  [90m153 |[0m   );
+[31m[1m>[0m [90m154 |[0m }
+  [90m    |[0m [31m[1m^[0m
+  [90m155 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/orbital-graphic.tsx
+    ./src/app/page.tsx
+
+
+ GET / 500 in 26ms (next.js: 11ms, application-code: 15ms)
+⨯ ./src/app/orbital-graphic.tsx:154:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m152 |[0m     </div>
+  [90m153 |[0m   );
+[31m[1m>[0m [90m154 |[0m }
+  [90m    |[0m [31m[1m^[0m
+  [90m155 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/orbital-graphic.tsx
+    ./src/app/page.tsx
+
+
+ GET / 500 in 24ms (next.js: 12ms, application-code: 12ms)
+[browser] Uncaught Error: ./src/app/orbital-graphic.tsx:154:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  152 |     </div>
+  153 |   );
+> 154 | }
+      | ^
+  155 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/orbital-graphic.tsx
+    ./src/app/page.tsx
+
+
+    at <unknown> (Error: ./src/app/orbital-graphic.tsx:154:1)
+    at <unknown> (Error: (./src/app/orbital-graphic.tsx:154:1)
+✓ Compiled in 53ms
+ GET / 200 in 617ms (next.js: 170ms, application-code: 448ms)
+✓ Compiled in 295ms
+ GET / 200 in 214ms (next.js: 155ms, application-code: 59ms)
+✓ Compiled in 9.6s
+✓ Compiled in 8.9s
+ GET / 200 in 9.1s (next.js: 9.1s, application-code: 65ms)
+ GET / 200 in 179ms (next.js: 125ms, application-code: 55ms)
+ GET / 200 in 203ms (next.js: 10ms, application-code: 194ms)
+[browser] Image with src "/assets/macbook.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+ GET / 200 in 110ms (next.js: 7ms, application-code: 103ms)
+✓ Compiled in 736ms
+ GET / 200 in 371ms (next.js: 311ms, application-code: 60ms)
+✓ Compiled in 325ms
+ GET / 200 in 311ms (next.js: 212ms, application-code: 98ms)
+✓ Compiled in 65ms
+ GET / 200 in 202ms (next.js: 127ms, application-code: 75ms)
+ GET / 200 in 226ms (next.js: 7ms, application-code: 219ms)

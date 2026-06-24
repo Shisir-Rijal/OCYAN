@@ -8,21 +8,26 @@ const ORBIT_DURATION = 22; // seconds per full revolution
 
 function NodePill({
   label,
+  mobileLabel,
   Icon,
   iconBg,
   iconColor,
 }: {
   label: string;
+  mobileLabel: string;
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
   iconBg: string;
   iconColor: string;
 }) {
   return (
-    <div className="flex items-center gap-3 whitespace-nowrap rounded-full border border-[#c7c4d7] bg-[#f8f9ff] px-4 py-2 shadow-md">
-      <div className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full ${iconBg}`}>
-        <Icon className={`h-3.5 w-3.5 ${iconColor}`} />
+    <div className="flex items-center gap-2 whitespace-nowrap rounded-full border border-[#c7c4d7] bg-[#f8f9ff] px-3 py-1.5 shadow-md sm:gap-3 sm:px-4 sm:py-2">
+      <div className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full sm:h-6 sm:w-6 ${iconBg}`}>
+        <Icon className={`h-3 w-3 sm:h-3.5 sm:w-3.5 ${iconColor}`} />
       </div>
-      <span className="font-mono text-[11px] uppercase tracking-wider text-[#0b1c30]">{label}</span>
+      <span className="font-mono text-[10px] uppercase tracking-wider text-[#0b1c30] sm:text-[11px]">
+        <span className="sm:hidden">{mobileLabel}</span>
+        <span className="hidden sm:inline">{label}</span>
+      </span>
     </div>
   );
 }
@@ -33,15 +38,16 @@ function NodePill({
 const NODES = [
   {
     label: "LinkedIn",
+    mobileLabel: "LinkedIn",
     Icon: LinkedInIcon,
     iconBg: "bg-emerald-100",
     iconColor: "text-[#0a66c2]",
-    // SVG endpoint and matching CSS position (center of node on that point)
     line: { x2: 338, y2: 76 },
     style: { top: 76, left: 338 },
   },
   {
     label: "Official Registry Data",
+    mobileLabel: "Registry",
     Icon: FileIcon,
     iconBg: "bg-rose-100",
     iconColor: "text-rose-600",
@@ -50,6 +56,7 @@ const NODES = [
   },
   {
     label: "Company Websites",
+    mobileLabel: "Websites",
     Icon: GlobeIcon,
     iconBg: "bg-accent/10",
     iconColor: "text-accent",
@@ -60,7 +67,8 @@ const NODES = [
 
 export function OrbitalGraphic() {
   return (
-    <div className="relative mx-auto h-[400px] w-[400px]">
+    <div className="relative mx-auto flex h-[300px] w-full max-w-[320px] items-center justify-center sm:h-[400px] sm:max-w-[400px]">
+      <div className="relative h-[400px] w-[400px] origin-center scale-[0.75] sm:scale-100">
       {/* Static outer ring */}
       <div className="absolute inset-0 rounded-full border border-[#c7c4d7]/40" />
 
@@ -130,6 +138,7 @@ export function OrbitalGraphic() {
             >
               <NodePill
                 label={n.label}
+                mobileLabel={n.mobileLabel}
                 Icon={n.Icon}
                 iconBg={n.iconBg}
                 iconColor={n.iconColor}
@@ -147,6 +156,7 @@ export function OrbitalGraphic() {
           style={{ background: "linear-gradient(135deg,#e1e0ff 0%,#d3e4fe 100%)" }}
         />
         <SparkleIcon className="relative z-10 h-10 w-10 text-accent" />
+      </div>
       </div>
     </div>
   );
