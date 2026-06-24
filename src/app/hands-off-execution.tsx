@@ -23,13 +23,13 @@ const STEPS: Array<{
     id: 2,
     Icon: CheckIcon,
     title: "Reply parsing",
-    desc: "Intent classified automatically — interest, objection, or ignore.",
+    desc: "Intent classified automatically: interest, objection, or ignore.",
   },
   {
     id: 3,
     Icon: SequenceIcon,
     title: "Follow-up sequence",
-    desc: "Contextual follow-ups on optimal cadence until a meeting is booked.",
+    desc: "Contextual follow ups on optimal cadence until a meeting is booked.",
   },
 ];
 
@@ -155,7 +155,7 @@ export function HandsOffExecution() {
             <span className="text-accent">Execution</span>
           </h2>
           <p className="max-w-[560px] text-base leading-relaxed text-muted">
-            Define your campaign parameters once. The agent handles everything —
+            Define your campaign parameters once. The agent handles everything:
             gathering information, sending mails, parsing replies, and executing
             dynamic follow-up sequences autonomously.
           </p>

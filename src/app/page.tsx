@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { LightningIcon } from "./icons";
+import { LightningIcon, LinkedInIcon } from "./icons";
 import { OrbitalGraphic } from "./orbital-graphic";
 import { KpiBars } from "./kpi-bars";
 import { HandsOffExecution } from "./hands-off-execution";
+import { SmoothLink } from "./smooth-link";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Reusable tiny bits
@@ -17,25 +18,27 @@ const PillButton = ({
   children,
   variant = "primary",
   className = "",
+  href = "#contact",
 }: {
   children: React.ReactNode;
   variant?: "primary" | "secondary";
   className?: string;
+  href?: string;
 }) =>
   variant === "primary" ? (
-    <a
-      href="#"
+    <SmoothLink
+      href={href}
       className={`inline-flex items-center justify-center rounded-full bg-black px-8 py-4 font-mono text-xs tracking-[0.05em] text-white shadow-md transition hover:opacity-80 ${className}`}
     >
       {children}
-    </a>
+    </SmoothLink>
   ) : (
-    <a
-      href="#"
+    <SmoothLink
+      href={href}
       className={`inline-flex items-center justify-center rounded-full border border-border bg-white/70 px-8 py-4 font-mono text-xs tracking-[0.05em] text-black backdrop-blur-md transition hover:bg-white ${className}`}
     >
       {children}
-    </a>
+    </SmoothLink>
   );
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -45,22 +48,26 @@ const PillButton = ({
 function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-page/70 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-5 sm:h-20 lg:px-20">
+      <div className="mx-auto grid h-16 max-w-[1280px] grid-cols-3 items-center px-5 sm:h-20 lg:px-20">
         <Logo size="text-xl sm:text-3xl" />
-        <nav className="hidden gap-10 md:flex">
-          {["Product", "Solutions", "Pricing"].map((l) => (
-            <a key={l} href="#" className="text-base text-muted transition hover:text-ink">
-              {l}
-            </a>
+        <nav className="hidden justify-center gap-10 md:flex">
+          {[
+            { label: "How it Works", href: "#how-it-works" },
+            { label: "Results", href: "#results" },
+            { label: "Contact", href: "#contact" },
+          ].map((l) => (
+            <SmoothLink key={l.label} href={l.href} className="text-base text-muted transition hover:text-ink">
+              {l.label}
+            </SmoothLink>
           ))}
         </nav>
-        <div className="flex items-center gap-4">
-          <a
-            href="#"
+        <div className="flex items-center justify-end gap-4">
+          <SmoothLink
+            href="#contact"
             className="rounded-full bg-black px-4 py-2 font-mono text-[10px] tracking-wider text-white shadow-sm transition hover:opacity-80 sm:px-6 sm:py-2.5 sm:text-xs"
           >
             Get Started
-          </a>
+          </SmoothLink>
         </div>
       </div>
     </header>
@@ -78,12 +85,12 @@ function HeroSection() {
           with Agentic AI.
         </h1>
         <p className="max-w-[672px] text-base leading-relaxed text-muted sm:text-lg lg:text-xl">
-          From lead data enrichment to personalized sequences. Completely autonomous, human-level quality.
-          Scale your top-of-funnel without lifting a finger.
+          From lead data enrichment to personalized sequences. Completely autonomous, human quality.
+          Scale your top of funnel without lifting a finger.
         </p>
         <div className="mt-2 flex w-full flex-col items-stretch gap-3 sm:mt-4 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
-          <PillButton variant="primary">Get Started</PillButton>
-          <PillButton variant="secondary">Book a Demo</PillButton>
+          <PillButton variant="primary" href="#contact">Get Started</PillButton>
+          <PillButton variant="secondary" href="#contact">Book a Demo</PillButton>
         </div>
       </div>
     </section>
@@ -129,7 +136,7 @@ function AutonomousIntelligenceSection() {
           </h2>
           <p className="mx-auto max-w-[440px] text-base leading-relaxed text-muted lg:mx-0">
             Our agents navigate LinkedIn, company websites, and public directories autonomously. They don&apos;t just
-            scrape data: they understand organizational structures and ensure first perfect-fit touchpoints with
+            scrape data: they understand organizational structures and ensure precise first touchpoints with
             your prospects.
           </p>
         </div>
@@ -171,7 +178,7 @@ function PersonalizationSection() {
             <span className="text-accent">Personalization</span> at Scale
           </h2>
           <p className="text-base leading-relaxed text-muted">
-            Our models synthesize the gathered context to write bespoke, hyper-personalized emails. No templates,
+            Our models synthesize the gathered context to write bespoke, deeply personalized emails. No templates,
             no generic variables. Every message reads as if you spent 30 minutes researching the prospect yourself
             and is refineable to suit your specific expectations.
           </p>
@@ -183,11 +190,11 @@ function PersonalizationSection() {
 
 function TestimonialSection() {
   return (
-    <section className="mx-auto max-w-[1280px] px-4 py-8 sm:px-6 sm:py-12 lg:px-20">
+    <section id="results" className="mx-auto max-w-[1280px] px-4 py-8 sm:px-6 sm:py-12 lg:px-20">
       <div className="overflow-hidden rounded-2xl border border-border bg-white/70 p-6 shadow-xl backdrop-blur-xl sm:p-10 sm:rounded-3xl lg:p-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12">
           <div className="flex flex-col gap-6 lg:col-span-2 lg:gap-8">
-            <blockquote className="font-display text-[18px] font-semibold leading-snug tracking-tight text-[#271901] sm:text-[22px] lg:text-[28px]">
+            <blockquote className="font-display text-[18px] font-semibold italic leading-snug tracking-tight text-[#271901] sm:text-[22px] lg:text-[28px]">
               &ldquo;OcyanOutreach entirely <span className="text-accent">revolutionized</span> our SDR. The quality of
               the personalization is indistinguishable from our best human reps, but it operates at 100&times; the
               volume. Our pipeline has never been healthier.&rdquo;
@@ -245,39 +252,118 @@ function CTASection() {
           Ready to put your outreach on <span className="text-accent">autopilot</span>?
         </h2>
         <p className="text-base leading-relaxed text-muted">
-          Join forward-thinking revenue teams scaling their top-of-funnel with autonomous AI agents.
+          Join ambitious revenue teams scaling their top of funnel with autonomous AI agents.
         </p>
-        <PillButton variant="primary" className="mt-2 px-10">
-          Start Scaling Now
+        <PillButton variant="primary" className="mt-2 px-10" href="#contact">
+          Get in Touch
         </PillButton>
       </div>
     </section>
   );
 }
 
-function Footer() {
-  const links = ["Documentation", "API Reference", "Status", "Privacy Policy", "Terms of Service", "Contact"];
+const FOUNDERS = [
+  {
+    initials: "SR",
+    name: "Shisir Rijal",
+    role: "Co-Founder",
+    email: "sr@ocyan.com",
+    linkedin: "https://www.linkedin.com/in/shisir-rijal-724051226/",
+  },
+  {
+    initials: "MN",
+    name: "Marko Novak",
+    role: "Co-Founder",
+    email: "mn@ocyan.com",
+    linkedin: "https://www.linkedin.com/in/marko-n-6766133b4/",
+  },
+];
+
+function ContactSection() {
   return (
-    <footer className="border-t border-border bg-[#f1eff0]">
-      <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-8 px-6 py-12 sm:gap-12 sm:py-16 lg:grid-cols-4 lg:px-20">
-        <div className="flex flex-col gap-4">
-          <Logo />
-          <p className="text-sm text-muted">Agentic AI for Go-To-Market</p>
-        </div>
-        <div className="grid grid-cols-2 gap-3 lg:col-span-2 lg:flex lg:flex-col">
-          {links.map((l) => (
-            <a key={l} href="#" className="text-sm text-muted transition hover:text-ink">
-              {l}
-            </a>
-          ))}
-        </div>
-        <div className="flex items-start lg:items-end lg:justify-end">
-          <p className="font-mono text-[11px] tracking-wider text-muted">
-            © 2026 OCYAN AI. GmbH
-            <br />
-            All rights reserved.
+    <section id="contact" className="border-t border-border bg-[#f6f3f5]/30 py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-[1280px] px-6 lg:px-20">
+        <div className="mb-10 flex flex-col items-center gap-3 text-center sm:mb-14">
+          <h2 className="font-display text-[28px] font-bold tracking-tight text-ink sm:text-[36px]">
+            Let&rsquo;s <span className="text-accent">talk.</span>
+          </h2>
+          <p className="max-w-[440px] text-base leading-relaxed text-muted">
+            We&rsquo;re available directly. Reach out and we&rsquo;ll get back to you within 24 hours.
           </p>
         </div>
+
+        <div className="mx-auto grid max-w-[640px] grid-cols-1 gap-4 sm:grid-cols-2">
+          {FOUNDERS.map((f) => (
+            <div
+              key={f.email}
+              className="flex flex-col gap-4 rounded-2xl border border-border bg-white/70 p-6 shadow-sm backdrop-blur-sm"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#271901]/20 bg-page/50">
+                  <span className="text-sm font-bold text-[#271901]">{f.initials}</span>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-ink">{f.name}</p>
+                  <p className="font-mono text-[10px] tracking-wider text-muted">{f.role}</p>
+                </div>
+              </div>
+
+              <a
+                href={`mailto:${f.email}`}
+                className="font-mono text-[12px] tracking-wide text-accent transition hover:opacity-70"
+              >
+                {f.email}
+              </a>
+
+              <a
+                href={f.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-mono text-[11px] tracking-wide text-muted transition hover:text-ink"
+              >
+                <LinkedInIcon className="h-4 w-4 text-[#0a66c2]" />
+                LinkedIn
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="border-t border-border bg-[#f1eff0]">
+      <div className="mx-auto flex max-w-[1280px] flex-col items-center gap-6 px-6 py-8 text-center sm:flex-row sm:justify-between sm:text-left lg:px-20">
+        <div className="flex flex-col gap-1">
+          <Logo size="text-xl" />
+          <p className="text-sm text-muted">Agentic AI for Go-To-Market</p>
+        </div>
+        <div className="flex items-center gap-6">
+          <a href="#contact" className="text-sm text-muted transition hover:text-ink">Contact</a>
+          <a
+            href="https://www.linkedin.com/in/shisir-rijal-724051226/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-sm text-muted transition hover:text-ink"
+          >
+            <LinkedInIcon className="h-4 w-4" />
+            Shisir
+          </a>
+          <a
+            href="https://www.linkedin.com/in/marko-n-6766133b4/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-sm text-muted transition hover:text-ink"
+          >
+            <LinkedInIcon className="h-4 w-4" />
+            Marko
+          </a>
+        </div>
+        <p className="font-mono text-[11px] tracking-wider text-muted">
+          © 2026 OCYAN AI
+        </p>
       </div>
     </footer>
   );
@@ -290,13 +376,15 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <TrustedBySection />
         <AutonomousIntelligenceSection />
         <PersonalizationSection />
         <TestimonialSection />
-        <HandsOffExecution />
+        <div id="how-it-works">
+          <HandsOffExecution />
+        </div>
         <SelfImprovingSection />
         <CTASection />
+        <ContactSection />
       </main>
       <Footer />
     </>
