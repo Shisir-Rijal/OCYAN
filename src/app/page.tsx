@@ -76,8 +76,21 @@ function Navbar() {
 
 function HeroSection() {
   return (
-    <section className="hero-halo relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-16 pt-28 sm:pt-40">
-      <div className="mx-auto flex max-w-[1280px] flex-col items-center gap-5 px-6 text-center sm:gap-6 lg:px-20">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-16 pt-28 sm:pt-40">
+      {/* Background image */}
+      <Image
+        src="/assets/hero-bg.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        quality={95}
+        className="pointer-events-none object-cover"
+        style={{ filter: "saturate(1) brightness(1.08)", opacity: 0.75 }}
+      />
+      {/* Soft white fade at bottom */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-page to-transparent" />
+      <div className="relative z-20 mx-auto flex max-w-[1280px] flex-col items-center gap-5 px-6 text-center sm:gap-6 lg:px-20">
         <h1 className="font-display text-[32px] font-bold leading-[1.15] tracking-[-0.02em] text-black sm:text-[40px] lg:text-[52px]">
           Automate your <span className="text-accent">Outreach</span>
           <br className="hidden sm:block" />
@@ -246,8 +259,17 @@ function SelfImprovingSection() {
 
 function CTASection() {
   return (
-    <section className="hero-halo relative border-t border-border py-20 sm:py-28">
-      <div className="mx-auto flex max-w-[800px] flex-col items-center gap-5 px-6 text-center sm:gap-6">
+    <section className="relative border-t border-border py-20 sm:py-28">
+      <Image
+        src="/assets/hero-bg.png"
+        alt=""
+        fill
+        sizes="100vw"
+        quality={95}
+        className="pointer-events-none object-cover"
+        style={{ filter: "saturate(1) brightness(1.1)", opacity: 0.75 }}
+      />
+      <div className="relative z-10 mx-auto flex max-w-[800px] flex-col items-center gap-5 px-6 text-center sm:gap-6">
         <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight text-ink sm:text-[40px] lg:text-[48px]">
           Ready to put your outreach on <span className="text-accent">autopilot</span>?
         </h2>
@@ -259,6 +281,7 @@ function CTASection() {
         </PillButton>
       </div>
     </section>
+
   );
 }
 
@@ -378,7 +401,7 @@ export default function Home() {
         <HeroSection />
         <AutonomousIntelligenceSection />
         <PersonalizationSection />
-        <TestimonialSection />
+        {/* <TestimonialSection /> — pending legal review */}
         <div id="how-it-works">
           <HandsOffExecution />
         </div>
