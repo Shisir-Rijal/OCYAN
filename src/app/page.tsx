@@ -259,7 +259,7 @@ function SelfImprovingSection() {
 
 function CTASection() {
   return (
-    <section className="relative border-t border-border py-20 sm:py-28">
+    <section className="relative py-20 sm:py-28">
       <Image
         src="/assets/hero-bg.png"
         alt=""
@@ -269,6 +269,8 @@ function CTASection() {
         className="pointer-events-none object-cover"
         style={{ filter: "saturate(1) brightness(1.1)", opacity: 0.75 }}
       />
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-40 bg-gradient-to-b from-page to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-40 bg-gradient-to-t from-page to-transparent" />
       <div className="relative z-10 mx-auto flex max-w-[800px] flex-col items-center gap-5 px-6 text-center sm:gap-6">
         <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight text-ink sm:text-[40px] lg:text-[48px]">
           Ready to put your outreach on <span className="text-accent">autopilot</span>?

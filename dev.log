@@ -1111,3 +1111,185 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (f
  GET / 200 in 137ms (next.js: 14ms, application-code: 123ms)
 ✓ Compiled in 1028ms
  GET / 200 in 3.0s (next.js: 2.3s, application-code: 728ms)
+✓ Compiled in 2.7s
+⨯ ./src/app/hands-off-execution.tsx:337:9
+Expected corresponding JSX closing tag for <section>
+  [90m335 |[0m           </div>
+  [90m336 |[0m         </div>
+[31m[1m>[0m [90m337 |[0m       </div>
+  [90m    |[0m         [31m[1m^^^[0m
+  [90m338 |[0m
+  [90m339 |[0m       {[90m/* Keyframes injected inline — no extra CSS file needed */[0m}
+  [90m340 |[0m       <style>{[32m`[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx
+
+
+ GET / 500 in 579ms (next.js: 276ms, application-code: 303ms)
+⨯ ./src/app/hands-off-execution.tsx:337:9
+Expected corresponding JSX closing tag for <section>
+  [90m335 |[0m           </div>
+  [90m336 |[0m         </div>
+[31m[1m>[0m [90m337 |[0m       </div>
+  [90m    |[0m         [31m[1m^^^[0m
+  [90m338 |[0m
+  [90m339 |[0m       {[90m/* Keyframes injected inline — no extra CSS file needed */[0m}
+  [90m340 |[0m       <style>{[32m`[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx
+
+
+ GET / 500 in 86ms (next.js: 53ms, application-code: 33ms)
+⨯ ./src/app/hands-off-execution.tsx:337:9
+Expected corresponding JSX closing tag for <section>
+  [90m335 |[0m           </div>
+  [90m336 |[0m         </div>
+[31m[1m>[0m [90m337 |[0m       </div>
+  [90m    |[0m         [31m[1m^^^[0m
+  [90m338 |[0m
+  [90m339 |[0m       {[90m/* Keyframes injected inline — no extra CSS file needed */[0m}
+  [90m340 |[0m       <style>{[32m`[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx
+
+
+ GET / 500 in 76ms (next.js: 43ms, application-code: 33ms)
+[browser] Uncaught Error: ./src/app/hands-off-execution.tsx:337:9
+Expected corresponding JSX closing tag for <section>
+  335 |           </div>
+  336 |         </div>
+> 337 |       </div>
+      |         ^^^
+  338 |
+  339 |       {/* Keyframes injected inline — no extra CSS file needed */}
+  340 |       <style>{`
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx
+
+
+    at <unknown> (Error: ./src/app/hands-off-execution.tsx:337:9)
+    at <unknown> (Error: (./src/app/hands-off-execution.tsx:337:9)
+[browser] ./src/app/hands-off-execution.tsx:334:9
+Expected corresponding JSX closing tag for <section>
+  332 |           </div>
+  333 |         </div>
+> 334 |       </div>
+      |         ^^^
+  335 |
+  336 |       {/* Keyframes injected inline — no extra CSS file needed */}
+  337 |       <style>{`
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx 
+    at handleErrors (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/hands-off-execution.tsx:334:9
+Expected corresponding JSX closing tag for <section>
+  332 |           </div>
+  333 |         </div>
+> 334 |       </div>
+      |         ^^^
+  335 |
+  336 |       {/* Keyframes injected inline — no extra CSS file needed */}
+  337 |       <style>{`
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx 
+    at handleErrors (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/hands-off-execution.tsx:334:9
+Expected corresponding JSX closing tag for <section>
+  332 |           </div>
+  333 |         </div>
+> 334 |       </div>
+      |         ^^^
+  335 |
+  336 |       {/* Keyframes injected inline — no extra CSS file needed */}
+  337 |       <style>{`
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx 
+    at handleErrors (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/hands-off-execution.tsx:334:9
+Expected corresponding JSX closing tag for <section>
+  332 |           </div>
+  333 |         </div>
+> 334 |       </div>
+      |         ^^^
+  335 |
+  336 |       {/* Keyframes injected inline — no extra CSS file needed */}
+  337 |       <style>{`
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/hands-off-execution.tsx
+    ./src/app/page.tsx 
+    at handleErrors (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+✓ Compiled in 238ms
+Image with src "/assets/hero-bg.png" is using quality "95" which is not configured in images.qualities [75]. Please update your config to [75, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 5.0s (next.js: 1278ms, application-code: 3.7s)
+[browser] Image with src "/assets/hero-bg.png" is using quality "95" which is not configured in images.qualities [75]. Please update your config to [75, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/assets/macbook.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/assets/screenshot-email.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+✓ Compiled in 925ms
+ GET / 200 in 1640ms (next.js: 1497ms, application-code: 143ms)
+Image with src "/assets/hero-bg.png" is using quality "95" which is not configured in images.qualities [75]. Please update your config to [75, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 1432ms (next.js: 28ms, application-code: 1404ms)
+[browser] Image with src "/assets/hero-bg.png" is using quality "95" which is not configured in images.qualities [75]. Please update your config to [75, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/assets/macbook.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/assets/screenshot-email.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes (file://C:/Users/Shisir/OneDrive/Desktop/Studium ID/OCYAN/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+✓ Compiled in 817ms
+ GET / 200 in 3.2s (next.js: 2.3s, application-code: 852ms)
+ GET / 200 in 150ms (next.js: 22ms, application-code: 128ms)
+✓ Compiled in 763ms
+ GET / 200 in 863ms (next.js: 388ms, application-code: 475ms)
+ GET / 200 in 223ms (next.js: 27ms, application-code: 196ms)
+✓ Compiled in 209ms

@@ -161,17 +161,12 @@ export function HandsOffExecution() {
           </p>
         </div>
 
-        {/* Card */}
-        <div
-          ref={ref}
-          className="overflow-hidden rounded-2xl"
-          style={{ background: "#181820", border: "0.5px solid #2a2a3a" }}
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2">
+        {/* Two-column layout — no shared wrapper */}
+        <div ref={ref} className="grid grid-cols-1 items-stretch gap-3 lg:grid-cols-2 lg:gap-5">
             {/* ── Log column ── */}
             <div
-              className="p-5 sm:p-7 lg:p-8 lg:border-r"
-              style={{ borderColor: "#2a2a3a" }}
+              className="overflow-hidden rounded-2xl p-5 sm:p-7 lg:p-8"
+              style={{ background: "#181820", border: "0.5px solid #2a2a3a" }}
             >
               {/* Terminal chrome */}
               <div className="mb-5 flex items-center gap-2">
@@ -225,10 +220,7 @@ export function HandsOffExecution() {
             </div>
 
             {/* ── Steps column ── */}
-            <div
-              className="flex flex-col gap-3 border-t bg-white p-5 sm:p-7 lg:border-l-0 lg:border-t-0 lg:p-8"
-              style={{ borderColor: "#e5e7eb" }}
-            >
+            <div className="flex flex-col gap-3">
               {STEPS.map((step) => {
                 const status = stepStatus[step.id];
                 const progress = stepProgress[step.id];
@@ -337,7 +329,6 @@ export function HandsOffExecution() {
                 );
               })}
             </div>
-          </div>
         </div>
       </div>
 
