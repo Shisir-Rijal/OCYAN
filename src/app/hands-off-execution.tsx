@@ -226,8 +226,8 @@ export function HandsOffExecution() {
 
             {/* ── Steps column ── */}
             <div
-              className="flex flex-col gap-3 border-t p-5 sm:p-7 lg:border-l-0 lg:border-t-0 lg:p-8"
-              style={{ borderColor: "#2a2a3a" }}
+              className="flex flex-col gap-3 border-t bg-white p-5 sm:p-7 lg:border-l-0 lg:border-t-0 lg:p-8"
+              style={{ borderColor: "#e5e7eb" }}
             >
               {STEPS.map((step) => {
                 const status = stepStatus[step.id];
@@ -237,20 +237,20 @@ export function HandsOffExecution() {
                     key={step.id}
                     className="rounded-xl p-4 transition-colors duration-500"
                     style={{
-                      background: status === "active" ? "#1a1a2e" : "#0f0f18",
+                      background: status === "active" ? "#f5f5ff" : "#f9fafb",
                       border:
                         status === "done"
-                          ? "0.5px solid #4648d4"
+                          ? "1px solid #4648d4"
                           : status === "active"
-                          ? "0.5px solid #7c7fec"
-                          : "0.5px solid #2a2a3a",
+                          ? "1px solid #a5b4fc"
+                          : "1px solid #e5e7eb",
                     }}
                   >
                     <div className="mb-2 flex items-center justify-between">
                       <span
                         className="font-mono text-[10px] font-semibold"
                         style={{
-                          color: status === "pending" ? "#4b5263" : "#7c7fec",
+                          color: status === "pending" ? "#9ca3af" : "#4648d4",
                         }}
                       >
                         0{step.id}
@@ -261,10 +261,10 @@ export function HandsOffExecution() {
                         style={{
                           background:
                             status === "done"
-                              ? "#34d399"
+                              ? "#10b981"
                               : status === "active"
-                              ? "#7c7fec"
-                              : "#2a2a3a",
+                              ? "#4648d4"
+                              : "#d1d5db",
                           animation:
                             status === "active" ? "statusPulse 1.5s ease-in-out infinite" : "none",
                         }}
@@ -274,16 +274,16 @@ export function HandsOffExecution() {
                     <div className="mb-1.5 flex items-center gap-2.5">
                       <div
                         className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg"
-                        style={{ background: "#1e1e3a" }}
+                        style={{ background: "#ede9fe" }}
                       >
                         <step.Icon
                           className="h-3.5 w-3.5"
-                          style={{ color: "#7c7fec" }}
+                          style={{ color: "#4648d4" }}
                         />
                       </div>
                       <span
                         className="text-[13px] font-medium"
-                        style={{ color: "#c8ccd4" }}
+                        style={{ color: "#111827" }}
                       >
                         {step.title}
                       </span>
@@ -291,7 +291,7 @@ export function HandsOffExecution() {
 
                     <p
                       className="mb-3 text-[11px] leading-relaxed"
-                      style={{ color: "#4b5263" }}
+                      style={{ color: "#6b7280" }}
                     >
                       {step.desc}
                     </p>
@@ -299,7 +299,7 @@ export function HandsOffExecution() {
                     {/* Progress bar */}
                     <div
                       className="h-[3px] overflow-hidden rounded-full"
-                      style={{ background: "#2a2a3a" }}
+                      style={{ background: "#e5e7eb" }}
                     >
                       <div
                         className="h-full rounded-full"
@@ -320,10 +320,10 @@ export function HandsOffExecution() {
                         style={{
                           color:
                             status === "done"
-                              ? "#34d399"
+                              ? "#10b981"
                               : status === "active"
-                              ? "#7c7fec"
-                              : "#2a2a3a",
+                              ? "#4648d4"
+                              : "#d1d5db",
                         }}
                       >
                         {status === "done"
