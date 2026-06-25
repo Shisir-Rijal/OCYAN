@@ -240,9 +240,6 @@ function SelfImprovingSection() {
     <section className="mx-auto max-w-[1280px] px-6 py-16 sm:py-20 lg:px-20 lg:py-24">
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-12">
         <div className="flex flex-col gap-4 lg:gap-5">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-accent/20 bg-accent/10">
-            <LightningIcon className="h-5 w-5 text-accent" />
-          </div>
           <h2 className="font-display text-[26px] font-semibold tracking-tight text-ink sm:text-[32px]">
             <span className="text-accent">Self-Improving</span> Intelligence
           </h2>

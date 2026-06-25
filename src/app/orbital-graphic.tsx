@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { LinkedInIcon, FileIcon, GlobeIcon, SparkleIcon } from "./icons";
+import { LinkedInIcon, FileIcon, GlobeIcon, BotIcon } from "./icons";
 import type { ComponentType, SVGProps } from "react";
 
 const ORBIT_DURATION = 22; // seconds per full revolution
@@ -155,7 +155,7 @@ export function OrbitalGraphic() {
           className="absolute inset-2 rounded-full"
           style={{ background: "linear-gradient(135deg,#e1e0ff 0%,#d3e4fe 100%)" }}
         />
-        <SparkleIcon className="relative z-10 h-10 w-10 text-accent" />
+        <BotIcon className="relative z-10 h-10 w-10 text-accent" />
       </div>
       </div>
     </div>
